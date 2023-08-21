@@ -2,7 +2,7 @@ import { View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import styles from "./current-weather.style";
 import {
-  Icon,
+  WeatherIcon,
   TemperatureInfo,
   WeatherDescription,
 } from "../../components/index";
@@ -11,7 +11,7 @@ const CurrentWeather = () => {
   return (
     <SafeAreaView style={styles.wrapper}>
       <View style={styles.currentWeatherContainer}>
-        <Icon iconType={"sunny"} iconSize={100} iconColor="black" />
+        <WeatherIcon weatherType={"sunny"} iconSize={100} iconColor="black" />
         <TemperatureInfo temperature={23} temperatureFeeling={20} />
       </View>
       <WeatherDescription description={"It' sunny!"} />

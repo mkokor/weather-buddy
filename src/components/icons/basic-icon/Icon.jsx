@@ -1,7 +1,7 @@
 import { Feather } from "@expo/vector-icons";
 
-const Icon = ({ iconType, iconSize, iconColor }) => {
+const BasicIcon = ({ iconType, iconSize, iconColor }) => {
   return <Feather name={iconType} size={iconSize} color={iconColor} />;
 };
 
-export default Icon;
+export default BasicIcon;

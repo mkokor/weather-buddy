@@ -1,13 +1,21 @@
-import { View, Text } from "react-native";
-import { Icon } from "../index";
+import { View } from "react-native";
+import { IconWithText } from "../index";
 
 const SunMovementInfo = ({ sunriseTime, sunsetTime }) => {
   return (
     <View>
-      <Icon iconType={"sunrise"} iconSize={60} iconColor={"black"} />
-      <Text>{sunriseTime}</Text>
-      <Icon iconType={"sunset"} iconSize={60} iconColor={"black"} />
-      <Text>{sunsetTime}</Text>
+      <IconWithText
+        iconType={"sunrise"}
+        iconSize={60}
+        iconColor={"black"}
+        text={sunriseTime}
+      />
+      <IconWithText
+        iconType={"sunset"}
+        iconSize={60}
+        iconColor={"black"}
+        text={sunsetTime}
+      />
     </View>
   );
 };

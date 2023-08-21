@@ -1,11 +1,15 @@
-import { View, Text } from "react-native";
-import { Icon } from "../index";
+import { View } from "react-native";
+import { IconWithText } from "../index";
 
 const PopulationInfo = ({ populationSize }) => {
   return (
     <View>
-      <Icon iconType="user" iconSize={100} iconColor="black" />
-      <Text>{populationSize}</Text>
+      <IconWithText
+        iconType="user"
+        iconSize={100}
+        iconColor="black"
+        text={populationSize}
+      />
     </View>
   );
 };
