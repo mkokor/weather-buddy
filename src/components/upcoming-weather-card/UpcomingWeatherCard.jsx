@@ -1,5 +1,5 @@
 import { View, Text } from "react-native";
-import { WeatherIcon } from "../index";
+import { Icon } from "../index";
 import styles from "./upcoming-weather-card.style";
 
 const UpcomingWeatherCard = ({
@@ -10,7 +10,7 @@ const UpcomingWeatherCard = ({
 }) => {
   return (
     <View style={styles.container}>
-      <WeatherIcon weatherType="sunny" iconSize={100} iconColor="black" />
+      <Icon name="sun" size={100} color="black" />
       <Text>{dateAndTime}</Text>
       <Text>{temperatureMax}</Text>
       <Text>{temperatureMin}</Text>

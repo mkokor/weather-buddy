@@ -5,9 +5,9 @@ const PopulationInfo = ({ populationSize }) => {
   return (
     <View>
       <IconWithText
-        iconType="user"
-        iconSize={100}
-        iconColor="black"
+        name="user"
+        size={100}
+        color="black"
         text={populationSize}
       />
     </View>

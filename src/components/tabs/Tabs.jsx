@@ -1,6 +1,7 @@
+import styles from "./tabs.style";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { CurrentWeather, UpcomingWeather, City } from "../../screens/index";
-import { BasicIcon } from "../index";
+import { Icon } from "../index";
 
 const Tab = createBottomTabNavigator();
 
@@ -10,6 +11,9 @@ const Tabs = () => {
       screenOptions={{
         tabBarActiveTintColor: "tomato",
         tabBarInactiveTintColor: "grey",
+        tabBarStyle: styles.tabBar,
+        headerStyle: styles.header,
+        headerTitle: styles.headerTitle,
       }}
     >
       <Tab.Screen
@@ -17,10 +21,10 @@ const Tabs = () => {
         component={CurrentWeather}
         options={{
           tabBarIcon: ({ focused }) => (
-            <BasicIcon
-              iconType="droplet"
-              iconSize={25}
-              iconColor={focused ? "tomato" : "black"}
+            <Icon
+              name="droplet"
+              size={25}
+              color={focused ? "tomato" : "black"}
             />
           ),
         }}
@@ -30,11 +34,7 @@ const Tabs = () => {
         component={UpcomingWeather}
         options={{
           tabBarIcon: ({ focused }) => (
-            <BasicIcon
-              iconType="clock"
-              iconSize={25}
-              iconColor={focused ? "tomato" : "black"}
-            />
+            <Icon name="clock" size={25} color={focused ? "tomato" : "black"} />
           ),
         }}
       />
@@ -43,11 +43,7 @@ const Tabs = () => {
         component={City}
         options={{
           tabBarIcon: ({ focused }) => (
-            <BasicIcon
-              iconType="home"
-              iconSize={25}
-              iconColor={focused ? "tomato" : "black"}
-            />
+            <Icon name="home" size={25} color={focused ? "tomato" : "black"} />
           ),
         }}
       />

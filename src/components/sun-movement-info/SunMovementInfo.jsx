@@ -5,13 +5,13 @@ const SunMovementInfo = ({ sunriseTime, sunsetTime }) => {
   return (
     <View>
       <IconWithText
-        iconType={"sunrise"}
+        iconName={"sunrise"}
         iconSize={60}
         iconColor={"black"}
         text={sunriseTime}
       />
       <IconWithText
-        iconType={"sunset"}
+        iconName={"sunset"}
         iconSize={60}
         iconColor={"black"}
         text={sunsetTime}

@@ -1,14 +1,10 @@
 import { View, Text } from "react-native";
-import { BasicIcon } from "../../index";
+import { Icon } from "../../index";
 
-const IconWithText = ({ iconType, iconSize, iconColor, text }) => {
+const IconWithText = ({ iconName, iconSize, iconColor, text }) => {
   return (
     <View>
-      <BasicIcon
-        iconType={iconType}
-        iconSize={iconSize}
-        iconColor={iconColor}
-      />
+      <Icon name={iconName} size={iconSize} color={iconColor} />
       <Text>{text}</Text>
     </View>
   );

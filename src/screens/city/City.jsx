@@ -1,6 +1,6 @@
 import styles from "./city.style";
 import { images } from "../../constants/index";
-import { Text, ImageBackground, View, SafeAreaView } from "react-native";
+import { ImageBackground, View, SafeAreaView } from "react-native";
 import {
   PopulationInfo,
   SunMovementInfo,
