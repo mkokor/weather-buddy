@@ -1,6 +1,11 @@
 import styles from "./city.style";
 import { images } from "../../constants/index";
 import { Text, ImageBackground, View, SafeAreaView } from "react-native";
+import {
+  PopulationInfo,
+  SunMovementInfo,
+  Location,
+} from "../../components/index";
 
 const City = () => {
   return (
@@ -10,8 +15,10 @@ const City = () => {
         style={styles.background}
         imageStyle={styles.backgroungImage}
       >
-        <View>
-          <Text>City Screen</Text>
+        <View style={styles.cityContainer}>
+          <Location city="London" state="UK" />
+          <PopulationInfo populationSize={8000} />
+          <SunMovementInfo sunriseTime="05:30:00am" sunsetTime="20:00:00pm" />
         </View>
       </ImageBackground>
     </SafeAreaView>
