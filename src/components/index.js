@@ -7,6 +7,7 @@ import SunMovementInfo from "./sun-movement-info/SunMovementInfo";
 import Location from "./location/Location";
 import WeatherIcon from "./icons/weather-icon/WeatherIcon";
 import IconWithText from "./icons/icon-with-text/IconWithText";
+import Tabs from "./tabs/Tabs";
 
 export {
   BasicIcon,
@@ -18,4 +19,5 @@ export {
   Location,
   WeatherIcon,
   IconWithText,
+  Tabs,
 };
