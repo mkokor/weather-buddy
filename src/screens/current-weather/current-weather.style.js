@@ -6,8 +6,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFF5E0",
   },
   currentWeatherContainer: {
-    alignItems: "center",
     flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
 

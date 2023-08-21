@@ -1,4 +1,5 @@
-import { View, SafeAreaView } from "react-native";
+import { View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import styles from "./current-weather.style";
 import {
   WeatherIcon,

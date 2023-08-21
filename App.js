@@ -1,8 +1,7 @@
-import { View, Text, SafeAreaView } from "react-native";
-import { CurrentWeather } from "./screens/index";
+import { CurrentWeather, UpcomingWeather, City } from "./src/screens/index";
 
 const App = () => {
-  return <CurrentWeather />;
+  return <City />;
 };
 
 export default App;
