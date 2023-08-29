@@ -1,11 +1,9 @@
 import styles from "./city.style";
 import { images } from "../../constants/index";
 import { ImageBackground, View, SafeAreaView } from "react-native";
-import {
-  PopulationInfo,
-  SunMovementInfo,
-  Location,
-} from "../../components/index";
+import PopulationInfo from "../../components/population-info/PopulationInfo";
+import SunMovementInfo from "../../components/sun-movement-info/SunMovementInfo";
+import Location from "../../components/location/Location";
 
 const City = () => {
   return (

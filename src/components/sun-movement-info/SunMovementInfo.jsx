@@ -1,5 +1,5 @@
 import { View } from "react-native";
-import { IconWithText } from "../index";
+import IconWithText from "../icon-with-text/IconWithText";
 
 const SunMovementInfo = ({ sunriseTime, sunsetTime }) => {
   return (

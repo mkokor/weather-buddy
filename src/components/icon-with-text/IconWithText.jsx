@@ -1,5 +1,5 @@
 import { View, Text } from "react-native";
-import { Icon } from "../index";
+import Icon from "../icon/Icon";
 
 const IconWithText = ({ iconName, iconSize, iconColor, text }) => {
   return (

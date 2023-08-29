@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { Tabs } from "./src/components/index";
+import Tabs from "./src/components/tabs/Tabs";
 import { ActivityIndicator } from "react-native";
 import { View } from "react-native";
 import * as Location from "expo-location";
+import environment from "./src/config/environment";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -11,6 +12,7 @@ const App = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    console.log(environment.testKey);
     (async () => {
       let { status } = await Location.requestForegroundPermissionsAsync();
       if (status !== "granted") {
@@ -20,7 +22,7 @@ const App = () => {
       let location = await Location.getCurrentPositionAsync();
       setLocation(location);
     })();
-  });
+  }, []);
 
   if (location) console.log(location);
 

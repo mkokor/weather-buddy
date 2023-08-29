@@ -1,7 +1,7 @@
 import styles from "./tabs.style";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { CurrentWeather, UpcomingWeather, City } from "../../screens/index";
-import { Icon } from "../index";
+import Icon from "../icon/Icon";
 
 const Tab = createBottomTabNavigator();
 

@@ -1,4 +1,4 @@
-import { UpcomingWeatherCard } from "../../components/index";
+import UpcomingWeatherCard from "../../components/upcoming-weather-card/UpcomingWeatherCard";
 import { images } from "../../constants/index";
 import styles from "./upcoming-weather.style";
 import {
