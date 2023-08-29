@@ -1,5 +1,6 @@
 import { View } from "react-native";
 import IconWithText from "../icon-with-text/IconWithText";
+import moment from "moment";
 
 const SunMovementInfo = ({ sunriseTime, sunsetTime }) => {
   return (
@@ -8,13 +9,13 @@ const SunMovementInfo = ({ sunriseTime, sunsetTime }) => {
         iconName={"sunrise"}
         iconSize={60}
         iconColor={"black"}
-        text={sunriseTime}
+        text={moment(sunriseTime).format("h:mm:ss a")}
       />
       <IconWithText
         iconName={"sunset"}
         iconSize={60}
         iconColor={"black"}
-        text={sunsetTime}
+        text={moment(sunsetTime).format("h:mm:ss a")}
       />
     </View>
   );

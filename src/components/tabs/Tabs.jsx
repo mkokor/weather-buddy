@@ -42,13 +42,14 @@ const Tabs = ({ weather }) => {
       </Tab.Screen>
       <Tab.Screen
         name="City"
-        component={City}
         options={{
           tabBarIcon: ({ focused }) => (
             <Icon name="home" size={25} color={focused ? "tomato" : "black"} />
           ),
         }}
-      />
+      >
+        {() => <City cityData={weather.city} />}
+      </Tab.Screen>
     </Tab.Navigator>
   );
 };

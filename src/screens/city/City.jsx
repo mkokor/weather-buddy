@@ -5,7 +5,15 @@ import PopulationInfo from "../../components/population-info/PopulationInfo";
 import SunMovementInfo from "../../components/sun-movement-info/SunMovementInfo";
 import Location from "../../components/location/Location";
 
-const City = () => {
+const City = ({ cityData }) => {
+  const {
+    name: cityName,
+    country: countryName,
+    population: populationSize,
+    sunrise: sunriseTime,
+    sunset: sunsetTime,
+  } = cityData;
+
   return (
     <SafeAreaView style={styles.wrapper}>
       <ImageBackground
@@ -14,9 +22,9 @@ const City = () => {
         imageStyle={styles.backgroungImage}
       >
         <View style={styles.cityContainer}>
-          <Location city="London" state="UK" />
-          <PopulationInfo populationSize={8000} />
-          <SunMovementInfo sunriseTime="05:30:00am" sunsetTime="20:00:00pm" />
+          <Location city={cityName} state={countryName} />
+          <PopulationInfo populationSize={populationSize} />
+          <SunMovementInfo sunriseTime={sunriseTime} sunsetTime={sunsetTime} />
         </View>
       </ImageBackground>
     </SafeAreaView>
