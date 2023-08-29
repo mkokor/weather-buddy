@@ -32,13 +32,14 @@ const Tabs = ({ weather }) => {
       </Tab.Screen>
       <Tab.Screen
         name="Upcoming"
-        component={UpcomingWeather}
         options={{
           tabBarIcon: ({ focused }) => (
             <Icon name="clock" size={25} color={focused ? "tomato" : "black"} />
           ),
         }}
-      />
+      >
+        {() => <UpcomingWeather weatherData={weather.list} />}
+      </Tab.Screen>
       <Tab.Screen
         name="City"
         component={City}
