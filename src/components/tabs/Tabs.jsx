@@ -12,8 +12,7 @@ const Tabs = ({ weather }) => {
         tabBarActiveTintColor: "tomato",
         tabBarInactiveTintColor: "grey",
         tabBarStyle: styles.tabBar,
-        headerStyle: styles.header,
-        headerTitle: styles.headerTitle,
+        headerShown: false,
       }}
     >
       <Tab.Screen
@@ -28,7 +27,12 @@ const Tabs = ({ weather }) => {
           ),
         }}
       >
-        {() => <CurrentWeather weatherData={weather.list[0]} />}
+        {() => (
+          <CurrentWeather
+            weatherData={weather.list[0]}
+            location={weather.city}
+          />
+        )}
       </Tab.Screen>
       <Tab.Screen
         name="Upcoming"

@@ -1,18 +1,19 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  container: {},
-  temperature: {
+  container: {
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  title: {
     fontFamily: "serif",
     fontWeight: "bold",
-    fontSize: 60,
-    textAlign: "center",
+    fontSize: 20,
     color: "white",
   },
-  temperatureFeeling: {
-    color: "white",
+  location: {
     fontFamily: "serif",
-    fontSize: 20,
+    color: "white",
   },
 });
 

@@ -1,14 +1,22 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, StatusBar } from "react-native";
 
 const styles = StyleSheet.create({
-  wrapper: (backgroundColor) => ({
+  wrapper: {
     flex: 1,
-    backgroundColor: backgroundColor,
-  }),
+    backgroundColor: "lightwhite",
+  },
+  background: {
+    flex: 1,
+  },
+  backgroundImage: {
+    flex: 1,
+  },
   currentWeatherContainer: {
+    marginTop: StatusBar.currentHeight || 0,
+    padding: 80,
     flex: 1,
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "start",
   },
 });
 
