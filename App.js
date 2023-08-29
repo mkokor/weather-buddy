@@ -6,43 +6,14 @@ import { View } from "react-native";
 import * as Location from "expo-location";
 import environment from "./src/config/environment";
 import axios from "axios";
+import { useGetWeatherData } from "./src/hooks/useGetWeatherData";
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [latitude, setLatitude] = useState(null);
-  const [longitude, setLongitude] = useState(null);
-  const [error, setError] = useState(null);
-  const [weatherData, setWeatherData] = useState(null);
+  const [isLoading, error, weatherData] = useGetWeatherData();
 
-  const getWeatherData = async () => {
-    try {
-      const response = await axios.get(
-        `http://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${environment.openWeatherApi.key}`
-      );
-      setWeatherData(response.data);
-    } catch (error) {
-      setError(error);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    setIsLoading(true);
-    (async () => {
-      let { status } = await Location.requestForegroundPermissionsAsync();
-      if (status !== "granted") {
-        setError("Permission to access location was denied.");
-        return;
-      }
-      const location = await Location.getCurrentPositionAsync({});
-      setLatitude(location.coords.latitude);
-      setLongitude(location.coords.longitude);
-      await getWeatherData();
-    })();
-  }, [latitude, longitude]);
-
-  if (weatherData) console.log(weatherData);
+  console.log(isLoading);
+  console.log(error);
+  console.log(weatherData);
 
   if (isLoading)
     return (
