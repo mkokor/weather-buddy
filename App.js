@@ -3,7 +3,7 @@ import Tabs from "./src/components/tabs/Tabs";
 import { ActivityIndicator } from "react-native";
 import { View } from "react-native";
 import { useGetWeather } from "./src/hooks/useGetWeather";
-import ErrorItem from "./src/components/error-item/ErrorItem";
+import { Error } from "./src/screens";
 
 const App = () => {
   const [isLoading, error, weather] = useGetWeather();
@@ -17,11 +17,7 @@ const App = () => {
 
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      {isLoading ? (
-        <ActivityIndicator size="large" color="black" />
-      ) : (
-        <ErrorItem />
-      )}
+      {error ? <Error /> : <ActivityIndicator size="large" color="black" />}
     </View>
   );
 };

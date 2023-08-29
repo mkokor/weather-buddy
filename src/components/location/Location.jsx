@@ -1,10 +1,10 @@
 import { View, Text } from "react-native";
 
-const Location = ({ city, state }) => {
+const Location = ({ cityName, countryName }) => {
   return (
     <View>
-      <Text>{city}</Text>
-      <Text>{state}</Text>
+      <Text>{cityName}</Text>
+      <Text>{countryName}</Text>
     </View>
   );
 };
