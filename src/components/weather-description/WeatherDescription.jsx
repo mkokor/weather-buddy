@@ -1,9 +1,10 @@
 import { View, Text } from "react-native";
 
-const WeatherDescription = ({ description }) => {
+const WeatherDescription = ({ title, message }) => {
   return (
     <View>
-      <Text>{description}</Text>
+      <Text>{title}</Text>
+      <Text>{message}</Text>
     </View>
   );
 };

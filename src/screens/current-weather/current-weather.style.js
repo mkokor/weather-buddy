@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  wrapper: {
+  wrapper: (backgroundColor) => ({
     flex: 1,
-    backgroundColor: "#FFF5E0",
-  },
+    backgroundColor: backgroundColor,
+  }),
   currentWeatherContainer: {
     flex: 1,
     alignItems: "center",

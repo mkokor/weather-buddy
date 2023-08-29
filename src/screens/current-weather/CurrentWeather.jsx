@@ -6,14 +6,40 @@ import Icon from "../../components/icon/Icon";
 import TemperatureInfo from "../../components/temperature-info/TemperatureInfo";
 import WeatherDescription from "../../components/weather-description/WeatherDescription";
 
-const CurrentWeather = () => {
+const CurrentWeather = ({ weatherData }) => {
+  const {
+    main: {
+      temp: temperature,
+      feels_like: temperatureFeeling,
+      temp_max: temperatureMax,
+      temp_min: temperatureMin,
+    },
+    weather,
+  } = weatherData;
+
+  const weatherCondition = weather[0].main;
+
   return (
-    <SafeAreaView style={styles.wrapper}>
+    <SafeAreaView
+      style={styles.wrapper(weatherTypes[weatherCondition].backgroundColor)}
+    >
       <View style={styles.currentWeatherContainer}>
-        <Icon name={weatherTypes.clear.iconName} size={100} color="black" />
-        <TemperatureInfo temperature={23} temperatureFeeling={20} />
+        <Icon
+          name={weatherTypes[weatherCondition].iconName}
+          size={100}
+          color="black"
+        />
+        <TemperatureInfo
+          temperature={temperature}
+          temperatureFeeling={temperatureFeeling}
+          temperatureMax={temperatureMax}
+          temperatureMin={temperatureMin}
+        />
       </View>
-      <WeatherDescription description={weatherTypes.clear.message} />
+      <WeatherDescription
+        title={weather[0].description}
+        message={weatherTypes[weatherCondition].message}
+      />
     </SafeAreaView>
   );
 };

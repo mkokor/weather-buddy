@@ -1,42 +1,42 @@
 export default {
-  thunderstorm: {
+  Thunderstorm: {
     iconName: "zap",
     message: "It Could Get Noisy",
-    backgroungColor: "#000000",
+    backgroundColor: "#000000",
   },
-  drizzle: {
+  Drizzle: {
     iconName: "cloud-rain",
     message: "It Might Rain a Little",
-    backgroungColor: "#36454F",
+    backgroundColor: "#36454F",
   },
-  rain: {
+  Rain: {
     iconName: "umbrella",
     message: "You Will Need an Umbrella",
-    backgroungColor: "#0000FF",
+    backgroundColor: "#0000FF",
   },
-  snow: {
+  Snow: {
     iconName: "cloud-snow",
     message: "Let's Build a Snowman",
-    backgroungColor: "#7F6065",
+    backgroundColor: "#7F6065",
   },
-  clear: {
+  Clear: {
     iconName: "sun",
     message: "It's Perfect T-shirt Weather",
-    backgroungColor: "#E47200",
+    backgroundColor: "#E47200",
   },
-  clouds: {
+  Clouds: {
     iconName: "cloud",
     message: "You Could Live In the Clouds",
-    backgroungColor: "#363636",
+    backgroundColor: "#363636",
   },
-  haze: {
+  Haze: {
     iconName: "wind",
     message: "It Might Be a Bit Damp",
-    backgroungColor: "#58586E",
+    backgroundColor: "#58586E",
   },
-  mist: {
+  Mist: {
     iconName: "align-justify",
     message: "It Might Be Hard To See",
-    backgroungColor: "#3E3E37",
+    backgroundColor: "#3E3E37",
   },
 };

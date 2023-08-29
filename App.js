@@ -3,29 +3,22 @@ import { NavigationContainer } from "@react-navigation/native";
 import Tabs from "./src/components/tabs/Tabs";
 import { ActivityIndicator } from "react-native";
 import { View } from "react-native";
-import * as Location from "expo-location";
-import environment from "./src/config/environment";
-import axios from "axios";
-import { useGetWeatherData } from "./src/hooks/useGetWeatherData";
+import { useGetWeather } from "./src/hooks/useGetWeather";
 
 const App = () => {
-  const [isLoading, error, weatherData] = useGetWeatherData();
+  const [isLoading, error, weather] = useGetWeather();
 
-  console.log(isLoading);
-  console.log(error);
-  console.log(weatherData);
-
-  if (isLoading)
+  if (weather && weather.list)
     return (
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <ActivityIndicator size="large" color="black" />
-      </View>
+      <NavigationContainer>
+        <Tabs weather={weather} />
+      </NavigationContainer>
     );
 
   return (
-    <NavigationContainer>
-      <Tabs />
-    </NavigationContainer>
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <ActivityIndicator size="large" color="black" />
+    </View>
   );
 };
 
