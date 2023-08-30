@@ -7,11 +7,12 @@ const styles = StyleSheet.create({
   cityContainer: {
     flex: 1,
     marginTop: StatusBar.currentHeight || 0,
+    padding: 10,
   },
   background: {
     flex: 1,
   },
-  backgroungImage: {
+  backgroundImage: {
     flex: 1,
   },
 });

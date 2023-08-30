@@ -19,10 +19,11 @@ const City = ({ cityData }) => {
       <ImageBackground
         source={images.cityBackground}
         style={styles.background}
-        imageStyle={styles.backgroungImage}
+        imageStyle={styles.backgroundImage}
+        resizeMode="cover"
       >
         <View style={styles.cityContainer}>
-          <Location city={cityName} state={countryName} />
+          <Location cityName={cityName} countryName={countryName} />
           <PopulationInfo populationSize={populationSize} />
           <SunMovementInfo sunriseTime={sunriseTime} sunsetTime={sunsetTime} />
         </View>

@@ -24,7 +24,7 @@ export default {
   Clear: {
     iconName: "sun",
     message: "It's Perfect T-shirt Weather",
-    backgroundImage: "#E47200",
+    backgroundImage: images.currentWeatherBackground.sun,
   },
   Clouds: {
     iconName: "cloud",
@@ -39,6 +39,6 @@ export default {
   Mist: {
     iconName: "align-justify",
     message: "It Might Be Hard To See",
-    backgroundImage: "#3E3E37",
+    backgroundImage: images.currentWeatherBackground.mist,
   },
 };
