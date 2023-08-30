@@ -5,14 +5,14 @@ const styles = StyleSheet.create({
   temperature: {
     fontFamily: "serif",
     fontWeight: "bold",
-    fontSize: 60,
+    fontSize: 55,
     textAlign: "center",
     color: "white",
   },
-  temperatureFeeling: {
-    color: "white",
+  message: {
     fontFamily: "serif",
-    fontSize: 20,
+    color: "white",
+    textAlign: "center",
   },
 });
 
