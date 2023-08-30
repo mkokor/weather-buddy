@@ -13,17 +13,14 @@ const Tabs = ({ weather }) => {
         tabBarInactiveTintColor: "grey",
         tabBarStyle: styles.tabBar,
         headerShown: false,
+        tabBarShowLabel: false,
       }}
     >
       <Tab.Screen
         name="Current"
         options={{
           tabBarIcon: ({ focused }) => (
-            <Icon
-              name="droplet"
-              size={25}
-              color={focused ? "tomato" : "black"}
-            />
+            <Icon name="droplet" size={focused ? 40 : 25} color={"white"} />
           ),
         }}
       >
@@ -38,7 +35,7 @@ const Tabs = ({ weather }) => {
         name="Upcoming"
         options={{
           tabBarIcon: ({ focused }) => (
-            <Icon name="clock" size={25} color={focused ? "tomato" : "black"} />
+            <Icon name="clock" size={focused ? 40 : 25} color={"white"} />
           ),
         }}
       >
@@ -48,7 +45,7 @@ const Tabs = ({ weather }) => {
         name="City"
         options={{
           tabBarIcon: ({ focused }) => (
-            <Icon name="home" size={25} color={focused ? "tomato" : "black"} />
+            <Icon name="home" size={focused ? 40 : 25} color={"white"} />
           ),
         }}
       >
