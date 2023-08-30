@@ -7,14 +7,14 @@ const styles = StyleSheet.create({
     gap: 4,
   },
   title: {
-    fontFamily: "serif",
+    fontFamily: "DMSans",
     fontWeight: "bold",
     fontSize: 22,
     color: "white",
     textAlign: "center",
   },
   location: {
-    fontFamily: "serif",
+    fontFamily: "DMSans",
     color: "white",
     fontSize: 14,
   },

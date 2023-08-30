@@ -4,11 +4,16 @@ import { ActivityIndicator } from "react-native";
 import { View } from "react-native";
 import { useGetWeather } from "./src/hooks/useGetWeather";
 import { Error } from "./src/screens";
+import { useFonts } from "expo-font";
 
 const App = () => {
+  const [fontsLoaded] = useFonts({
+    DMSans: require("./assets/fonts/dmsans-regular.ttf"),
+  });
+
   const [isLoading, error, weather] = useGetWeather();
 
-  if (weather && weather.list)
+  if (fontsLoaded && weather && weather.list)
     return (
       <NavigationContainer>
         <Tabs weather={weather} />

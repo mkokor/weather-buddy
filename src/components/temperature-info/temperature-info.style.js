@@ -3,14 +3,14 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   container: {},
   temperature: {
-    fontFamily: "serif",
+    fontFamily: "DMSans",
     fontWeight: "bold",
     fontSize: 55,
     textAlign: "center",
     color: "white",
   },
   message: {
-    fontFamily: "serif",
+    fontFamily: "DMSans",
     color: "white",
     textAlign: "center",
   },
