@@ -3,7 +3,7 @@ import styles from "./temperature-info.style";
 
 const TemperatureInfo = ({ temperature, message }) => {
   return (
-    <View style={styles.container}>
+    <View>
       <Text style={styles.temperature}>{`${Math.round(temperature)}°`}</Text>
       <Text style={styles.message}>{message}</Text>
     </View>

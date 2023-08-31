@@ -4,14 +4,14 @@ import { capitalizeText } from "../../utils/capitalizer";
 import { Entypo } from "@expo/vector-icons";
 
 const CurrentWeatherHeading = ({ title, location }) => {
-  const { name: cityName, country: countryName } = location;
+  const { name: cityName, country: countryCode } = location;
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{capitalizeText(title)}</Text>
       <View style={styles.locationContainer}>
         <Entypo name="location-pin" size={20} color="white" />
-        <Text style={styles.location}>{`${cityName}, ${countryName}`}</Text>
+        <Text style={styles.location}>{`${cityName}, ${countryCode}`}</Text>
       </View>
     </View>
   );

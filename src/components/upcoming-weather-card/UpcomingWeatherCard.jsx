@@ -14,7 +14,7 @@ const UpcomingWeatherCard = ({
     <View style={styles.container}>
       <Icon name={weatherTypes[condition].iconName} size={100} color="black" />
       <View>
-        <Text>{moment(dateAndTime).format("dddd")}</Text>
+        <Text style={styles.day}>{moment(dateAndTime).format("dddd")}</Text>
         <Text>{moment(dateAndTime).format("h:mm:ss a")}</Text>
       </View>
       <Text>{`${Math.round(temperatureMax)}°C`}</Text>

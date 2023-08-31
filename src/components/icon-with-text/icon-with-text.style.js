@@ -2,15 +2,15 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#FF6969",
-    marginVertical: 10,
-    margin: 10,
+    alignSelf: "flex-start",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 1,
   },
-  day: {
+  text: {
     fontFamily: "DMSans",
-    fontWeight: "bold",
     color: "white",
-    fontSize: 25,
+    fontSize: 15,
   },
 });
 

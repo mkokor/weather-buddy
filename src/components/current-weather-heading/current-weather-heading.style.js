@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
     fontFamily: "DMSans",
     color: "white",
     fontSize: 14,
+    textAlign: "center",
   },
   locationContainer: {
     flexDirection: "row",

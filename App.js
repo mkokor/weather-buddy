@@ -5,24 +5,41 @@ import { View } from "react-native";
 import { useGetWeather } from "./src/hooks/useGetWeather";
 import { Error } from "./src/screens";
 import { useFonts } from "expo-font";
+import { useCallback } from "react";
+import * as SplashScreen from "expo-splash-screen";
+import styles from "./app.style";
+
+SplashScreen.preventAutoHideAsync();
 
 const App = () => {
-  const [fontsLoaded] = useFonts({
+  const [fontsLoaded, fontsLoadingError] = useFonts({
     DMSans: require("./assets/fonts/dmsans-regular.ttf"),
   });
 
   const [isLoading, error, weather] = useGetWeather();
 
-  if (fontsLoaded && weather && weather.list)
+  const onLayoutRootView = useCallback(async () => {
+    if (fontsLoaded) await SplashScreen.hideAsync();
+  }, [fontsLoaded]);
+
+  if (!fontsLoaded) return null;
+
+  if (weather && weather.list)
     return (
-      <NavigationContainer>
-        <Tabs weather={weather} />
-      </NavigationContainer>
+      <View style={styles.applicationWrapper} onLayout={onLayoutRootView}>
+        <NavigationContainer>
+          <Tabs weather={weather} />
+        </NavigationContainer>
+      </View>
     );
 
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      {error ? <Error /> : <ActivityIndicator size="large" color="black" />}
+    <View style={styles.errorWrapper} onLayout={onLayoutRootView}>
+      {error || fontsLoadingError ? (
+        <Error />
+      ) : (
+        <ActivityIndicator size="large" color="black" />
+      )}
     </View>
   );
 };

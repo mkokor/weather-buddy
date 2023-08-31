@@ -15,6 +15,11 @@ const styles = StyleSheet.create({
   backgroundImage: {
     flex: 1,
   },
+  layoutBox: (size) => ({
+    flex: size,
+    justifyContent: "center",
+    alignItems: "center",
+  }),
 });
 
 export default styles;

@@ -7,13 +7,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   cityName: {
-    fontFamily: "serif",
+    fontFamily: "DMSans",
     fontWeight: "bold",
     fontSize: 50,
     color: "black",
   },
   countryName: {
-    fontFamily: "serif",
+    fontFamily: "DMSans",
+    fontWeight: "bold",
+    fontSize: 10,
   },
 });
 

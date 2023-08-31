@@ -3,13 +3,9 @@ const capitalizeWord = (word) => {
   return word[0].toUpperCase() + word.toLowerCase().slice(1);
 };
 
-const capitalizeText = (text) => {
+export const capitalizeText = (text) => {
   return text
     .split(" ")
     .map((word) => capitalizeWord(word))
     .join(" ");
-};
-
-module.exports = {
-  capitalizeText,
 };
