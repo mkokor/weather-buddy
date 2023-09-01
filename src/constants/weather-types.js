@@ -24,12 +24,12 @@ export default {
   Clear: {
     iconName: "sun",
     message: "It's Perfect T-shirt Weather",
-    backgroundImage: images.currentWeatherBackground.sun,
+    backgroundImage: images.currentWeatherBackground.clear,
   },
   Clouds: {
     iconName: "cloud",
     message: "You Could Live In the Clouds",
-    backgroundImage: "#363636",
+    backgroundImage: images.currentWeatherBackground.clouds,
   },
   Haze: {
     iconName: "wind",

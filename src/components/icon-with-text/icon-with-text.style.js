@@ -1,12 +1,13 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  container: {
+  container: (flexDirection) => ({
+    flexDirection: flexDirection,
     alignSelf: "flex-start",
     alignItems: "center",
     justifyContent: "center",
     gap: 1,
-  },
+  }),
   text: {
     fontFamily: "DMSans",
     color: "white",

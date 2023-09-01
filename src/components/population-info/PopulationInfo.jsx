@@ -1,13 +1,15 @@
 import { View } from "react-native";
 import IconWithText from "../icon-with-text/IconWithText";
+import styles from "./population.style";
 
 const PopulationInfo = ({ populationSize }) => {
   return (
-    <View>
+    <View style={styles.container}>
       <IconWithText
-        name="user"
-        size={100}
-        color="black"
+        flexDirection={"row"}
+        iconName="user"
+        iconSize={40}
+        iconColor="white"
         text={populationSize}
       />
     </View>

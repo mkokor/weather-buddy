@@ -16,12 +16,15 @@ const UpcomingWeather = ({ weatherData }) => {
   return (
     <SafeAreaView style={styles.wrapper}>
       <ImageBackground
-        source={images.upcomingWeatherBackground}
+        source={images.upcomingWeatherBackgroun} // Correct error!
         style={styles.background}
         imageStyle={styles.backgroungImage}
       >
         <View style={styles.upcomingWeatherContainer}>
           <FlatList
+            ItemSeparatorComponent={() => {
+              return <View style={styles.separator} />;
+            }}
             data={weatherData}
             renderItem={renderWeatherItem}
             keyExtractor={(item) => item.dt_txt}

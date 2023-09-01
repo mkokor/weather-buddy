@@ -15,7 +15,7 @@ const CurrentWeather = ({ weatherData, location }) => {
   return (
     <SafeAreaView style={styles.wrapper}>
       <ImageBackground
-        source={weatherTypes["Mist"].backgroundImage}
+        source={weatherTypes[weatherCondition].backgroundImage}
         style={styles.background}
         imageStyle={styles.backgroundImage}
         resizeMode="cover"

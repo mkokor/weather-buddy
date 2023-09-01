@@ -2,8 +2,9 @@ import upcomingWeatherBackground from "../../assets/images/upcoming-weather-back
 import cityBackground from "../../assets/images/city-background.jpg";
 import snow from "../../assets/images/current-weather-background/snow.png";
 import rain from "../../assets/images/current-weather-background/rain.jpg";
-import sun from "../../assets/images/current-weather-background/sun.jpg";
+import clear from "../../assets/images/current-weather-background/clear.jpg";
 import mist from "../../assets/images/current-weather-background/mist.jpg";
+import clouds from "../../assets/images/current-weather-background/clouds.jpg";
 
 export default {
   upcomingWeatherBackground,
@@ -11,7 +12,8 @@ export default {
   currentWeatherBackground: {
     snow,
     rain,
-    sun,
+    clear,
     mist,
+    clouds,
   },
 };
