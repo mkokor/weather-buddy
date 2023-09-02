@@ -1,4 +1,4 @@
-import { View, ImageBackground, SafeAreaView, Text } from "react-native";
+import { View, ImageBackground } from "react-native";
 import styles from "./current-weather.style";
 import { weatherTypes } from "../../constants/index";
 import TemperatureInfo from "../../components/temperature-info/TemperatureInfo";
@@ -13,7 +13,7 @@ const CurrentWeather = ({ weatherData, location }) => {
   const weatherCondition = weather[0].main;
 
   return (
-    <SafeAreaView style={styles.wrapper}>
+    <View style={styles.wrapper}>
       <ImageBackground
         source={weatherTypes[weatherCondition].backgroundImage}
         style={styles.background}
@@ -31,7 +31,7 @@ const CurrentWeather = ({ weatherData, location }) => {
           />
         </View>
       </ImageBackground>
-    </SafeAreaView>
+    </View>
   );
 };
 

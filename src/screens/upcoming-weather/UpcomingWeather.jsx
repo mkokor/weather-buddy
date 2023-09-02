@@ -1,7 +1,7 @@
 import UpcomingWeatherCard from "../../components/upcoming-weather-card/UpcomingWeatherCard";
 import { images } from "../../constants/index";
 import styles from "./upcoming-weather.style";
-import { View, FlatList, ImageBackground, SafeAreaView } from "react-native";
+import { View, FlatList, ImageBackground } from "react-native";
 
 const UpcomingWeather = ({ weatherData }) => {
   const renderWeatherItem = ({ item }) => (
@@ -14,7 +14,7 @@ const UpcomingWeather = ({ weatherData }) => {
   );
 
   return (
-    <SafeAreaView style={styles.wrapper}>
+    <View style={styles.wrapper}>
       <ImageBackground
         source={images.upcomingWeatherBackgroun} // Correct error!
         style={styles.background}
@@ -31,7 +31,7 @@ const UpcomingWeather = ({ weatherData }) => {
           />
         </View>
       </ImageBackground>
-    </SafeAreaView>
+    </View>
   );
 };
 

@@ -1,6 +1,6 @@
 import styles from "./city.style";
 import { images } from "../../constants/index";
-import { ImageBackground, View, SafeAreaView } from "react-native";
+import { ImageBackground, View } from "react-native";
 import PopulationInfo from "../../components/population-info/PopulationInfo";
 import SunMovementInfo from "../../components/sun-movement-info/SunMovementInfo";
 import Location from "../../components/location/Location";
@@ -16,7 +16,7 @@ const City = ({ cityData }) => {
   } = cityData;
 
   return (
-    <SafeAreaView style={styles.wrapper}>
+    <View style={styles.wrapper}>
       <ImageBackground
         source={images.cityBackground}
         style={styles.background}
@@ -41,7 +41,7 @@ const City = ({ cityData }) => {
           </View>
         </View>
       </ImageBackground>
-    </SafeAreaView>
+    </View>
   );
 };
 
