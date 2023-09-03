@@ -2,8 +2,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   temperature: {
-    fontFamily: "DMSans",
-    fontWeight: "bold",
+    fontFamily: "DMSansBold",
     fontSize: 55,
     textAlign: "center",
     color: "white",

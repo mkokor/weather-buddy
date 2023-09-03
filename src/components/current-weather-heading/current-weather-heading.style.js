@@ -7,8 +7,7 @@ const styles = StyleSheet.create({
     gap: 4,
   },
   title: {
-    fontFamily: "DMSans",
-    fontWeight: "bold",
+    fontFamily: "DMSansBold",
     fontSize: 22,
     color: "white",
     textAlign: "center",

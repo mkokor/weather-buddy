@@ -14,6 +14,7 @@ SplashScreen.preventAutoHideAsync();
 const App = () => {
   const [fontsLoaded, fontsLoadingError] = useFonts({
     DMSans: require("./assets/fonts/dmsans-regular.ttf"),
+    DMSansBold: require("./assets/fonts/dmsans-bold.ttf"),
   });
 
   const [isLoading, error, weather] = useGetWeather();

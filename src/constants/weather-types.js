@@ -4,12 +4,12 @@ export default {
   Thunderstorm: {
     iconName: "zap",
     message: "It Could Get Noisy",
-    backgroundImage: "#000000",
+    backgroundImage: images.currentWeatherBackground.thunderstorm,
   },
   Drizzle: {
     iconName: "cloud-rain",
     message: "It Might Rain a Little",
-    backgroundImage: "#36454F",
+    backgroundImage: images.currentWeatherBackground.drizzle,
   },
   Rain: {
     iconName: "umbrella",
@@ -34,7 +34,7 @@ export default {
   Haze: {
     iconName: "wind",
     message: "It Might Be a Bit Damp",
-    backgroundImage: "#58586E",
+    backgroundImage: images.currentWeatherBackground.haze,
   },
   Mist: {
     iconName: "align-justify",

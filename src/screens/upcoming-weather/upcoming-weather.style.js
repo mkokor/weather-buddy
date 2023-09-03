@@ -8,19 +8,33 @@ const styles = StyleSheet.create({
   upcomingWeatherContainer: {
     flex: 1,
     marginTop: StatusBar.currentHeight || 0,
-    paddingTop: 60,
+    paddingTop: 30,
     paddingHorizontal: 10,
     marginBottom: 120,
+    paddingHorizontal: 8,
   },
   background: {
     flex: 1,
   },
-  backgroungImage: {
+  backgroundImage: {
     flex: 1,
+    opacity: 0.5,
   },
   separator: {
     height: 1,
     backgroundColor: "#E4E4D0",
+  },
+  sectionHeader: {
+    fontFamily: "DMSansBold",
+    color: "white",
+    fontSize: 20,
+    marginBottom: 5,
+    marginTop: 20,
+  },
+  sectionListContainer: {
+    backgroundColor: "#272829",
+    borderRadius: 10,
+    opacity: 0.4,
   },
 });
 
