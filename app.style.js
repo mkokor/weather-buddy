@@ -6,6 +6,8 @@ const styles = StyleSheet.create({
   },
   errorWrapper: {
     flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
 

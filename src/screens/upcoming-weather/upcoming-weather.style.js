@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   },
   backgroundImage: {
     flex: 1,
-    opacity: 0.5,
+    opacity: 0.6,
   },
   separator: {
     height: 1,
