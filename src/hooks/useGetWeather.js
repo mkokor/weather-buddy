@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import * as Location from "expo-location";
 import environment from "../config/environment";
 import axios from "axios";
+import { errorTypes } from "../constants/index";
 
 export const useGetWeather = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -17,7 +18,7 @@ export const useGetWeather = () => {
       );
       setWeather(response.data);
     } catch (error) {
-      setError(error);
+      setError(errorTypes.InternalError);
     } finally {
       setIsLoading(false);
     }
@@ -29,7 +30,7 @@ export const useGetWeather = () => {
     (async () => {
       let { status } = await Location.requestForegroundPermissionsAsync();
       if (status !== "granted") {
-        setError("Permission to access location was denied.");
+        setError(errorTypes.LocationAccessDeniedError);
         return;
       }
       const location = await Location.getCurrentPositionAsync({});

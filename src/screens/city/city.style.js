@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
   },
-  cityContainer: {
+  container: {
     flex: 1,
     padding: 10,
   },

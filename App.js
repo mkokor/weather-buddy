@@ -37,7 +37,7 @@ const App = () => {
   return (
     <View style={styles.errorWrapper} onLayout={onLayoutRootView}>
       {error || fontsLoadingError ? (
-        <Error />
+        <Error error={error} />
       ) : (
         <ActivityIndicator size="large" color="black" />
       )}

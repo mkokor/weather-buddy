@@ -48,7 +48,7 @@ const UpcomingWeather = ({ weatherData }) => {
         style={styles.background}
         imageStyle={styles.backgroundImage}
       >
-        <SafeAreaView style={styles.upcomingWeatherContainer}>
+        <SafeAreaView style={styles.container}>
           <SectionList
             sections={weatherByDay}
             keyExtractor={(item, index) => item + index}

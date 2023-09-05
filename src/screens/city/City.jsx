@@ -24,7 +24,7 @@ const City = ({ cityData }) => {
         imageStyle={styles.backgroundImage}
         resizeMode="cover"
       >
-        <SafeAreaView style={styles.cityContainer}>
+        <SafeAreaView style={styles.container}>
           <View style={styles.layoutBox(1)}>
             <Location
               cityName={cityName}

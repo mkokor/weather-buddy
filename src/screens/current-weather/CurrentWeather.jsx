@@ -21,7 +21,7 @@ const CurrentWeather = ({ weatherData, location }) => {
         imageStyle={styles.backgroundImage}
         resizeMode="cover"
       >
-        <SafeAreaView style={styles.currentWeatherContainer}>
+        <SafeAreaView style={styles.container}>
           <CurrentWeatherHeading
             title={weather[0].description}
             location={location}

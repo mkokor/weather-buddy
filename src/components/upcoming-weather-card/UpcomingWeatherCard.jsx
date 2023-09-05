@@ -1,7 +1,7 @@
 import styles from "./upcoming-weather-card.style";
 import { View, Text } from "react-native";
 import Icon from "../icon/Icon";
-import { weatherTypes } from "../../constants";
+import { weatherTypes } from "../../constants/index";
 import moment from "moment";
 
 const UpcomingWeatherCard = ({

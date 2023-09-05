@@ -1,21 +1,26 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  wrapper: {
-    flex: 1,
-    backgroundColor: "lightwhite",
+  heading: {
+    fontFamily: "DMSansBold",
+    fontSize: 70,
+    textAlign: "center",
+  },
+  message: {
+    fontFamily: "DMSans",
+    textAlign: "center",
   },
   background: {
     flex: 1,
+    backgroundColor: "#E25E3E",
   },
   backgroundImage: {
     flex: 1,
   },
   container: {
-    padding: 80,
     flex: 1,
     alignItems: "center",
-    justifyContent: "start",
+    justifyContent: "center",
   },
 });
 

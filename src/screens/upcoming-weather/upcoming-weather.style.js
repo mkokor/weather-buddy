@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#040D12",
   },
-  upcomingWeatherContainer: {
+  container: {
     flex: 1,
     paddingTop: 30,
     marginBottom: 120,
