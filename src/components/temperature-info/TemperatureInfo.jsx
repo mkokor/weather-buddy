@@ -1,5 +1,5 @@
-import { View, Text } from "react-native";
 import styles from "./temperature-info.style";
+import { View, Text } from "react-native";
 
 const TemperatureInfo = ({ temperature, message }) => {
   return (

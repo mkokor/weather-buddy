@@ -1,6 +1,6 @@
+import styles from "./upcoming-weather-card.style";
 import { View, Text } from "react-native";
 import Icon from "../icon/Icon";
-import styles from "./upcoming-weather-card.style";
 import { weatherTypes } from "../../constants";
 import moment from "moment";
 

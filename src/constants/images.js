@@ -1,4 +1,3 @@
-import upcomingWeatherBackground from "../../assets/images/backgrounds/upcoming-weather-background.jpg";
 import cityBackground from "../../assets/images/backgrounds/city-background.jpg";
 import snow from "../../assets/images/backgrounds/current-weather-background/snow.jpg";
 import rain from "../../assets/images/backgrounds/current-weather-background/rain.jpg";
@@ -10,7 +9,6 @@ import drizzle from "../../assets/images/backgrounds/current-weather-background/
 import haze from "../../assets/images/backgrounds/current-weather-background/haze.jpg";
 
 export default {
-  upcomingWeatherBackground,
   cityBackground,
   currentWeatherBackground: {
     snow,

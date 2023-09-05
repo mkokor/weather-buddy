@@ -1,4 +1,4 @@
-import { StyleSheet, StatusBar } from "react-native";
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
   },
   upcomingWeatherContainer: {
     flex: 1,
-    marginTop: StatusBar.currentHeight || 0,
     paddingTop: 30,
     marginBottom: 120,
     paddingHorizontal: 8,

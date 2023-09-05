@@ -5,6 +5,7 @@ import PopulationInfo from "../../components/population-info/PopulationInfo";
 import SunMovementInfo from "../../components/sun-movement-info/SunMovementInfo";
 import Location from "../../components/location/Location";
 import { getCountryName } from "../../utils/country-name-getter";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const City = ({ cityData }) => {
   const {
@@ -23,7 +24,7 @@ const City = ({ cityData }) => {
         imageStyle={styles.backgroundImage}
         resizeMode="cover"
       >
-        <View style={styles.cityContainer}>
+        <SafeAreaView style={styles.cityContainer}>
           <View style={styles.layoutBox(1)}>
             <Location
               cityName={cityName}
@@ -39,7 +40,7 @@ const City = ({ cityData }) => {
               sunsetTime={sunsetTime}
             />
           </View>
-        </View>
+        </SafeAreaView>
       </ImageBackground>
     </View>
   );

@@ -1,10 +1,10 @@
+import styles from "./population.style";
 import { View } from "react-native";
 import IconWithText from "../icon-with-text/IconWithText";
-import styles from "./population.style";
 
 const PopulationInfo = ({ populationSize }) => {
   return (
-    <View style={styles.container}>
+    <View>
       <IconWithText
         flexDirection={"row"}
         iconName="user"

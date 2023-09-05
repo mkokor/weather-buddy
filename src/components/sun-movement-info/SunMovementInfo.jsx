@@ -1,7 +1,7 @@
+import styles from "./sun-movement.style";
 import { View } from "react-native";
 import IconWithText from "../icon-with-text/IconWithText";
 import moment from "moment";
-import styles from "./sun-movement.style";
 
 const SunMovementInfo = ({ sunriseTime, sunsetTime }) => {
   return (

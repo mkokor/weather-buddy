@@ -1,8 +1,9 @@
+import styles from "./upcoming-weather.style";
 import UpcomingWeatherCard from "../../components/upcoming-weather-card/UpcomingWeatherCard";
 import { weatherTypes } from "../../constants/index";
-import styles from "./upcoming-weather.style";
 import { removeDuplicates } from "../../utils/array-utility";
 import moment from "moment";
+import { SafeAreaView } from "react-native-safe-area-context";
 import {
   View,
   FlatList,
@@ -47,7 +48,7 @@ const UpcomingWeather = ({ weatherData }) => {
         style={styles.background}
         imageStyle={styles.backgroundImage}
       >
-        <View style={styles.upcomingWeatherContainer}>
+        <SafeAreaView style={styles.upcomingWeatherContainer}>
           <SectionList
             sections={weatherByDay}
             keyExtractor={(item, index) => item + index}
@@ -59,6 +60,7 @@ const UpcomingWeather = ({ weatherData }) => {
                   keyExtractor={(item) => item.dt_txt}
                   showsHorizontalScrollIndicator={false}
                   horizontal
+                  overScrollMode="never"
                 />
               </ImageBackground>
             )}
@@ -68,8 +70,9 @@ const UpcomingWeather = ({ weatherData }) => {
               </Text>
             )}
             showsVerticalScrollIndicator={false}
+            overScrollMode="never"
           />
-        </View>
+        </SafeAreaView>
       </ImageBackground>
     </View>
   );

@@ -1,3 +1,4 @@
+import styles from "./app.style";
 import { NavigationContainer } from "@react-navigation/native";
 import Tabs from "./src/components/tabs/Tabs";
 import { ActivityIndicator } from "react-native";
@@ -7,7 +8,6 @@ import { Error } from "./src/screens";
 import { useFonts } from "expo-font";
 import { useCallback } from "react";
 import * as SplashScreen from "expo-splash-screen";
-import styles from "./app.style";
 
 SplashScreen.preventAutoHideAsync();
 

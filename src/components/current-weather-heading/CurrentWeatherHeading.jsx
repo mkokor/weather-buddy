@@ -1,5 +1,5 @@
-import { View, Text } from "react-native";
 import styles from "./current-weather-heading.style";
+import { View, Text } from "react-native";
 import { capitalizeText } from "../../utils/capitalizer";
 import { Entypo } from "@expo/vector-icons";
 

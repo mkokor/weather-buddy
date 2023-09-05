@@ -1,6 +1,6 @@
+import styles from "./icon-with-text.style";
 import { View, Text } from "react-native";
 import Icon from "../icon/Icon";
-import styles from "./icon-with-text.style";
 
 const IconWithText = ({
   flexDirection,

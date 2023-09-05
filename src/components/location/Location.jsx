@@ -1,5 +1,5 @@
-import { View, Text } from "react-native";
 import styles from "./location.style";
+import { View, Text } from "react-native";
 
 const Location = ({ cityName, countryName }) => {
   return (
