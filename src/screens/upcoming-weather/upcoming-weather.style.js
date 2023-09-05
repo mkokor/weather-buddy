@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: StatusBar.currentHeight || 0,
     paddingTop: 30,
-    paddingHorizontal: 10,
     marginBottom: 120,
     paddingHorizontal: 8,
   },
