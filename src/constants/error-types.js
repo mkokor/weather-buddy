@@ -7,4 +7,8 @@ export default {
     explanation: "Something went wrong.",
     advice: "Try again or come back later.",
   },
+  NoInternetConnectionError: {
+    explanation: "No internet connection.",
+    advice: "Establish internet connection to continue.",
+  },
 };
