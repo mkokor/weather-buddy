@@ -1,8 +1,7 @@
 import styles from "./app.style";
 import { NavigationContainer } from "@react-navigation/native";
 import Tabs from "./src/components/tabs/Tabs";
-import { ActivityIndicator } from "react-native";
-import { View } from "react-native";
+import { View, ActivityIndicator } from "react-native";
 import { useGetWeather } from "./src/hooks/useGetWeather";
 import { Error } from "./src/screens";
 import { useFonts } from "expo-font";
