@@ -2,27 +2,29 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 85,
-    justifyContent: "center",
+    position: "absolute",
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
     alignItems: "center",
     gap: 20,
+    backgroundColor: "rgba(39, 40, 41, 0.4)",
+    borderRadius: 10,
+    flexDirection: "row",
   },
   cityName: {
     fontFamily: "DMSansBold",
     fontSize: 40,
     color: "white",
-    textAlign: "center",
   },
   countryName: {
     color: "white",
     fontFamily: "DMSansBold",
     fontSize: 12,
-    textAlign: "center",
   },
   countryContainer: {
     flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
   },
 });
 

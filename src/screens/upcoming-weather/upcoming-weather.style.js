@@ -30,9 +30,8 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   sectionListContainer: {
-    backgroundColor: "#272829",
     borderRadius: 10,
-    opacity: 0.4,
+    backgroundColor: "rgba(39, 40, 41, 0.4)",
   },
 });
 

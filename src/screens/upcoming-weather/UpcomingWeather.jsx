@@ -53,7 +53,7 @@ const UpcomingWeather = ({ weatherData }) => {
             sections={weatherByDay}
             keyExtractor={(item, index) => item + index}
             renderItem={({ item }) => (
-              <ImageBackground imageStyle={styles.sectionListContainer}>
+              <View style={styles.sectionListContainer}>
                 <FlatList
                   data={item}
                   renderItem={renderWeatherItem}
@@ -62,7 +62,7 @@ const UpcomingWeather = ({ weatherData }) => {
                   horizontal
                   overScrollMode="never"
                 />
-              </ImageBackground>
+              </View>
             )}
             renderSectionHeader={({ section: { title } }) => (
               <Text style={[styles.fontStyling, styles.sectionHeader]}>
