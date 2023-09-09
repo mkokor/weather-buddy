@@ -6,13 +6,13 @@ const IconWithText = ({
   flexDirection,
   iconName,
   iconSize,
-  iconColor,
+  themeColor,
   text,
 }) => {
   return (
     <View style={styles.container(flexDirection)}>
-      <Icon name={iconName} size={iconSize} color={iconColor} />
-      <Text style={styles.text}>{text}</Text>
+      <Icon name={iconName} size={iconSize} color={themeColor} />
+      <Text style={styles.text(themeColor)}>{text}</Text>
     </View>
   );
 };

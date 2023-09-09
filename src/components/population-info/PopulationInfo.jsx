@@ -4,12 +4,12 @@ import IconWithText from "../icon-with-text/IconWithText";
 
 const PopulationInfo = ({ populationSize }) => {
   return (
-    <View>
+    <View style={styles.container}>
       <IconWithText
         flexDirection={"row"}
         iconName="user"
-        iconSize={40}
-        iconColor="white"
+        iconSize={80}
+        themeColor="black"
         text={populationSize}
       />
     </View>

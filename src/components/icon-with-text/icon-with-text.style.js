@@ -8,11 +8,11 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     gap: 1,
   }),
-  text: {
+  text: (color) => ({
     fontFamily: "DMSans",
-    color: "white",
+    color: color,
     fontSize: 15,
-  },
+  }),
 });
 
 export default styles;

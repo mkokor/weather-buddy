@@ -5,7 +5,7 @@ import { Entypo } from "@expo/vector-icons";
 const Location = ({ cityName, countryName }) => {
   return (
     <View style={styles.container}>
-      <Entypo name="location-pin" size={80} color="white" />
+      <Entypo name="location-pin" size={80} color="black" />
       <View>
         <Text style={styles.cityName}>{cityName}</Text>
         <View style={styles.countryContainer}>

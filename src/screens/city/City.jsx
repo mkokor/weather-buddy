@@ -17,24 +17,24 @@ const City = ({ cityData }) => {
   } = cityData;
 
   return (
-    <View style={styles.wrapper}>
+    <View style={styles.fullLayoutBox}>
       <ImageBackground
         source={images.cityBackground}
-        style={styles.background}
-        imageStyle={styles.backgroundImage}
+        style={styles.fullLayoutBox}
+        imageStyle={styles.fullLayoutBox}
         resizeMode="cover"
       >
         <SafeAreaView style={styles.container}>
-          <View style={styles.layoutBox(1, "black")}>
+          <View style={styles.sectionBox(100, 0)}>
             <Location
               cityName={cityName}
               countryName={getCountryName(countryCode)}
             />
           </View>
-          <View style={styles.layoutBox(1, "blue")}>
+          <View style={styles.sectionBox(100, 0)}>
             <PopulationInfo populationSize={populationSize} />
           </View>
-          <View style={styles.layoutBox(2, "red")}>
+          <View style={styles.sectionBox(100, 40)}>
             <SunMovementInfo
               sunriseTime={sunriseTime}
               sunsetTime={sunsetTime}
