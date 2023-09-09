@@ -25,7 +25,7 @@ const City = ({ cityData }) => {
         resizeMode="cover"
       >
         <SafeAreaView style={styles.container}>
-          <View style={styles.sectionBox(100, 0)}>
+          <View style={styles.sectionBox(100, 50)}>
             <Location
               cityName={cityName}
               countryName={getCountryName(countryCode)}
@@ -34,7 +34,7 @@ const City = ({ cityData }) => {
           <View style={styles.sectionBox(100, 0)}>
             <PopulationInfo populationSize={populationSize} />
           </View>
-          <View style={styles.sectionBox(100, 40)}>
+          <View style={styles.sectionBox(100, 0)}>
             <SunMovementInfo
               sunriseTime={sunriseTime}
               sunsetTime={sunsetTime}

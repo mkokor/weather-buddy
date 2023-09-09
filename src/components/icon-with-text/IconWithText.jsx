@@ -8,9 +8,10 @@ const IconWithText = ({
   iconSize,
   themeColor,
   text,
+  gap,
 }) => {
   return (
-    <View style={styles.container(flexDirection)}>
+    <View style={styles.container(flexDirection, gap)}>
       <Icon name={iconName} size={iconSize} color={themeColor} />
       <Text style={styles.text(themeColor)}>{text}</Text>
     </View>

@@ -8,9 +8,10 @@ const PopulationInfo = ({ populationSize }) => {
       <IconWithText
         flexDirection={"row"}
         iconName="user"
-        iconSize={80}
+        iconSize={30}
         themeColor="black"
         text={populationSize}
+        gap={2}
       />
     </View>
   );

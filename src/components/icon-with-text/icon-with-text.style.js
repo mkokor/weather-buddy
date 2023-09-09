@@ -1,15 +1,15 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  container: (flexDirection) => ({
+  container: (flexDirection, gap) => ({
     flexDirection: flexDirection,
     alignSelf: "flex-start",
     alignItems: "center",
     justifyContent: "center",
-    gap: 1,
+    gap: gap,
   }),
   text: (color) => ({
-    fontFamily: "DMSans",
+    fontFamily: "DMSansBold",
     color: color,
     fontSize: 15,
   }),

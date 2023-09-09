@@ -12,6 +12,7 @@ const SunMovementInfo = ({ sunriseTime, sunsetTime }) => {
         iconSize={65}
         themeColor={"black"}
         text={moment(sunriseTime).format("HH:mm:ss")}
+        gap={1}
       />
       <IconWithText
         flexDirection={"column"}
@@ -19,6 +20,7 @@ const SunMovementInfo = ({ sunriseTime, sunsetTime }) => {
         iconSize={65}
         themeColor={"black"}
         text={moment(sunsetTime).format("HH:mm:ss")}
+        gap={1}
       />
     </View>
   );
