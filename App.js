@@ -45,7 +45,7 @@ const App = () => {
     );
 
   return (
-    <View style={styles.errorWrapper} onLayout={onLayoutRootView}>
+    <View style={styles.applicationWrapper} onLayout={onLayoutRootView}>
       {!isOnline || weatherFetchingError || fontsLoadingError ? (
         <Error
           error={

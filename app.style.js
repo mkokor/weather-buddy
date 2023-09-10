@@ -4,9 +4,6 @@ const styles = StyleSheet.create({
   applicationWrapper: {
     flex: 1,
   },
-  errorWrapper: {
-    flex: 1,
-  },
   centralizedBox: {
     flex: 1,
     alignItems: "center",

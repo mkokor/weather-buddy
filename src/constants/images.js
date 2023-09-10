@@ -7,6 +7,7 @@ import clouds from "../../assets/images/backgrounds/current-weather-background/c
 import thunderstorm from "../../assets/images/backgrounds/current-weather-background/thunderstorm.jpg";
 import drizzle from "../../assets/images/backgrounds/current-weather-background/drizzle.jpg";
 import haze from "../../assets/images/backgrounds/current-weather-background/haze.jpg";
+import sadCloud from "../../assets/images/other/sad-cloud.png";
 
 export default {
   cityBackground,
@@ -20,4 +21,5 @@ export default {
     drizzle,
     haze,
   },
+  sadCloud,
 };

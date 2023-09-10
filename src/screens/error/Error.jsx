@@ -1,14 +1,13 @@
 import styles from "./error.style";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { ImageBackground, Text, View } from "react-native";
-import { images } from "../../constants";
-import Icon from "../../components/icon/Icon";
+import { Text, View, Image, ImageBackground } from "react-native";
+import { images } from "../../constants/index";
 
 const Error = ({ error }) => {
   return (
     <View style={styles.background}>
       <SafeAreaView style={styles.container}>
-        {false && <Icon name={"frown"} size={100} color={"black"} />}
+        <Image source={images.sadCloud} style={styles.errorImage} />
         <Text style={styles.heading}>Oops!</Text>
         <Text
           style={styles.message}
