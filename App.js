@@ -46,16 +46,18 @@ const App = () => {
 
   return (
     <View style={styles.errorWrapper} onLayout={onLayoutRootView}>
-      {isOnline || weatherFetchingError || fontsLoadingError ? (
+      {!isOnline || weatherFetchingError || fontsLoadingError ? (
         <Error
           error={
-            errorTypes.NoInternetConnectionError ||
+            (!isOnline && errorTypes.NoInternetConnectionError) ||
             weatherFetchingError ||
-            errorTypes.InternalError
+            (fontsLoadingError && errorTypes.InternalError)
           }
         />
       ) : (
-        <ActivityIndicator size="large" color="black" />
+        <View style={styles.centralizedBox}>
+          <ActivityIndicator size="large" color="black" />
+        </View>
       )}
     </View>
   );

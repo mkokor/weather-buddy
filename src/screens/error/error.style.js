@@ -12,10 +12,7 @@ const styles = StyleSheet.create({
   },
   background: {
     flex: 1,
-    backgroundColor: "#E25E3E",
-  },
-  backgroundImage: {
-    flex: 1,
+    backgroundColor: "red", //"#E25E3E",
   },
   container: {
     flex: 1,
