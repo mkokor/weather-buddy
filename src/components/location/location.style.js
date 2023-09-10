@@ -6,7 +6,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     gap: 0,
+  },
+  cityContainer: {
+    alignItems: "center",
+    justifyContent: "center",
     flexDirection: "row",
+    paddingRight: 10,
   },
   cityName: {
     fontFamily: "DMSansBold",
@@ -16,7 +21,7 @@ const styles = StyleSheet.create({
   countryName: {
     color: "black",
     fontFamily: "DMSans",
-    fontSize: 14,
+    fontSize: 15,
   },
   countryContainer: {
     flexDirection: "row",

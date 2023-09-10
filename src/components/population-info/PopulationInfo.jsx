@@ -6,7 +6,7 @@ const PopulationInfo = ({ populationSize }) => {
   return (
     <View style={styles.container}>
       <IconWithText
-        flexDirection={"row"}
+        flexDirection="row"
         iconName="user"
         iconSize={30}
         themeColor="black"
