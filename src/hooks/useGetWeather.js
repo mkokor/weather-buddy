@@ -43,7 +43,6 @@ export const useGetWeather = () => {
   const refetch = () => {
     setIsLoading(true);
     getWeatherData();
-    console.log("Refreshing weather data...");
   };
 
   return [isLoading, error, weather, refetch];
