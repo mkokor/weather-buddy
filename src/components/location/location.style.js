@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "row",
-    paddingRight: 10,
+    paddingRight: 11,
   },
   cityName: {
     fontFamily: "DMSansBold",

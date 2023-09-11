@@ -36,9 +36,15 @@ export const useGetWeather = () => {
       const location = await Location.getCurrentPositionAsync({});
       setLatitude(location.coords.latitude);
       setLongitude(location.coords.longitude);
-      await getWeatherData();
+      getWeatherData();
     })();
   }, [latitude, longitude]);
 
-  return [isLoading, error, weather];
+  const refetch = () => {
+    //setIsLoading(true);
+    //getWeatherData();
+    console.log("Refetching the weather data...");
+  };
+
+  return [isLoading, error, weather, refetch];
 };
