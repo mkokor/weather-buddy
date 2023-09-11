@@ -35,6 +35,7 @@ const City = ({ cityData }) => {
       >
         <SafeAreaView style={styles.container}>
           <ScrollView
+            showsVerticalScrollIndicator={false}
             refreshControl={
               <RefreshControl refreshing={refreshing} onRefresh={refresh} />
             }

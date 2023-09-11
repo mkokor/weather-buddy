@@ -32,6 +32,7 @@ const CurrentWeather = ({ weatherData, location }) => {
       >
         <SafeAreaView style={styles.container}>
           <ScrollView
+            showsVerticalScrollIndicator={false}
             refreshControl={
               <RefreshControl refreshing={refreshing} onRefresh={refresh} />
             }

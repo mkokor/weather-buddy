@@ -4,15 +4,20 @@ import { weatherTypes } from "../../constants/index";
 import { removeDuplicates } from "../../utils/array-utility";
 import moment from "moment";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { RefreshContext } from "../../contexts/refresh-context";
+import { useContext } from "react";
 import {
   View,
   FlatList,
   ImageBackground,
   SectionList,
   Text,
+  RefreshControl,
 } from "react-native";
 
 const UpcomingWeather = ({ weatherData }) => {
+  const { refreshing, refresh } = useContext(RefreshContext);
+
   const currentWeatherCondition = weatherData[0].weather[0].main;
 
   const renderWeatherItem = ({ item }) => (
@@ -50,6 +55,9 @@ const UpcomingWeather = ({ weatherData }) => {
       >
         <SafeAreaView style={styles.container}>
           <SectionList
+            refreshControl={
+              <RefreshControl refreshing={refreshing} onRefresh={refresh} />
+            }
             sections={weatherByDay}
             keyExtractor={(item, index) => item + index}
             renderItem={({ item }) => (
