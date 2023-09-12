@@ -1,18 +1,18 @@
 <br />
 <div align="center">
   <a href="https://github.com/mkokor/weather-buddy">
-    <img src="./assets/logo.jpg" alt="Logo" width="200"">
+    <img src="./assets/logo.png" alt="Logo" width="200"">
   </a>
 
   <h3 align="center">Weather Buddy</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    An awesome weather forecast mobile application!
     <br />
-    <a href="https://github.com/mkokor/weather-buddy"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/mkokor/weather-buddy/#readme"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/mkokor/Best-README-Template">View Demo</a>
+    <a href="https://github.com/mkokor/weather-buddy/#description">View Demo</a>
     ·
     <a href="https://github.com/mkokor/weather-buddy/issues">Report Bug</a>
     ·
