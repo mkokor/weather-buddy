@@ -26,7 +26,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#installation">Demonstration</a></li>
+        <li><a href="#demonstration">Demonstration</a></li>
       </ul>
     </li>
     <li>
