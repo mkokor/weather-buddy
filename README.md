@@ -42,6 +42,7 @@
   </ol>
 </details>
 
+
 # About the Project
 <p align="justify">
 Weather Buddy is a feature-rich weather forecast mobile application created using React Native and developed using the <a href="https://docs.expo.dev/tutorial/create-your-first-app/">Create Expo App</a> command for ease of development. The application utilizes the power of the <a href="https://openweathermap.org/">OpenWeather API</a> as its backend service.
@@ -119,4 +120,8 @@ Install <a href="https://expo.dev/client">Expo Go</a> application, and scan the 
 
 # Contributors
 <p align="justify">Shout out to:</p>
-- <a href="mailto: mkokor2@etf.unsa.ba">Melisa Hodžić</a> for designing amazing background images.
+<ol>
+  <li>
+    <strong>Melisa Hodžić (melisa3112@gmail.com)</strong> for designing amazing background images.
+  </li>
+</ol>
