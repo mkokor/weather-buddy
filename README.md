@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/mkokor/weather-buddy">
-    <img src="./assets/icon.png" alt="Logo" width="80" height="80">
+    <img src="./assets/logo.jpg" alt="Logo" width="200"">
   </a>
 
   <h3 align="center">Weather Buddy</h3>
