@@ -42,7 +42,7 @@ const CurrentWeather = ({ weatherData, location }) => {
               location={location}
             />
             <TemperatureInfo
-              temperature={temperature}
+              temperature={18}
               message={weatherTypes[weatherCondition].message}
             />
           </ScrollView>

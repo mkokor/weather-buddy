@@ -41,4 +41,34 @@ export default {
     message: "It Might Be Hard To See",
     backgroundImage: images.currentWeatherBackground.mist,
   },
+  Smoke: {
+    iconName: "align-justify",
+    message: "It Might Be Hard To See",
+    backgroundImage: images.currentWeatherBackground.mist,
+  },
+  Dust: {
+    iconName: "align-justify",
+    message: "It Might Be a Bit Damp",
+    backgroundImage: images.currentWeatherBackground.haze,
+  },
+  Fog: {
+    iconName: "align-justify",
+    message: "It Might Be Hard To See",
+    backgroundImage: images.currentWeatherBackground.mist,
+  },
+  Ash: {
+    iconName: "align-justify",
+    message: "It Might Be a Bit Damp",
+    backgroundImage: images.currentWeatherBackground.haze,
+  },
+  Squall: {
+    iconName: "align-justify",
+    message: "It Might Be a Bit Damp",
+    backgroundImage: images.currentWeatherBackground.haze,
+  },
+  Tornado: {
+    iconName: "align-justify",
+    message: "It Might Be a Bit Damp",
+    backgroundImage: images.currentWeatherBackground.haze,
+  },
 };

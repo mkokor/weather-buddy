@@ -50,10 +50,10 @@ const App = () => {
 
   return (
     <View style={styles.applicationWrapper} onLayout={onLayoutRootView}>
-      {isOnline || weatherFetchingError || fontsLoadingError ? (
+      {!isOnline || weatherFetchingError || fontsLoadingError ? (
         <Error
           error={
-            (isOnline && errorTypes.NoInternetConnectionError) ||
+            (!isOnline && errorTypes.NoInternetConnectionError) ||
             weatherFetchingError ||
             (fontsLoadingError && errorTypes.InternalError)
           }
