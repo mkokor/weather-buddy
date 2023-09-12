@@ -37,7 +37,7 @@
       </ul>
     </li>
     <li>
-      <a href="#about-the-project">Contributors</a>
+      <a href="#contributors">Contributors</a>
     </li>
   </ol>
 </details>
