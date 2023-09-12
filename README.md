@@ -12,7 +12,7 @@
     <a href="https://github.com/mkokor/weather-buddy/#readme"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/mkokor/weather-buddy/#description">View Demo</a>
+    <a href="https://github.com/mkokor/weather-buddy/#demonstration">View Demo</a>
     ·
     <a href="https://github.com/mkokor/weather-buddy/issues">Report Bug</a>
     ·
@@ -20,7 +20,29 @@
   </p>
 </div>
 
-# Description
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#execution">Execution</a></li>
+      </ul>
+    </li>
+  </ol>
+</details>
+
+# About the Project
+<p align="justify">
+Weather Buddy is a weather forecast mobile application built with React Native (<a href="https://docs.expo.dev/tutorial/create-your-first-app/">Create Expo App</a> command). <a href="https://openweathermap.org/">OpenWeather API</a> is used as a backend service
+</p>
+
+
+## Demonstration
 
 ### Splash Screen
 <div align="center">
@@ -57,7 +79,7 @@
 
 # Getting Started
 <p align="justify">
-  Follow the instructions bellow to get local copy up and running.
+Follow the instructions bellow to get local copy up and running.
 </p>
 
 ## Installation
@@ -77,7 +99,7 @@ OPEN_WEATHER_API_KEY="YOUR_API_KEY"
 
 ## Execution
 <p align="justify">
-  Run command bellow to start the application.
+Run command bellow to start the application.
 </p>
 
 ```bash
@@ -85,5 +107,5 @@ npm start
 ```
 
 <p align="justify">
-  Install <a href="https://expo.dev/client">Expo Go</a> application, and scan the generated QR code.
+Install <a href="https://expo.dev/client">Expo Go</a> application, and scan the generated QR code.
 </p>
