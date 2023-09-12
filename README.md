@@ -3,9 +3,7 @@
   <a href="https://github.com/mkokor/weather-buddy">
     <img src="./assets/logo.png" alt="Logo" width="200"">
   </a>
-
   <h3 align="center">Weather Buddy</h3>
-
   <p align="center">
     An awesome weather forecast mobile application!
     <br />
