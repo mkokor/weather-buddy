@@ -36,6 +36,9 @@
         <li><a href="#execution">Execution</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#about-the-project">Contributors</a>
+    </li>
   </ol>
 </details>
 
@@ -115,4 +118,5 @@ Install <a href="https://expo.dev/client">Expo Go</a> application, and scan the 
 
 
 # Contributors
-
+<p align="justify">Shout out to:</p>
+- <a href="mailto: mkokor2@etf.unsa.ba">Melisa Hodžić</a> for designing amazing background images.
