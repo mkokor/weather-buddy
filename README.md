@@ -25,6 +25,9 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#installation">Demonstration</a></li>
+      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -38,7 +41,7 @@
 
 # About the Project
 <p align="justify">
-Weather Buddy is a weather forecast mobile application built with React Native (<a href="https://docs.expo.dev/tutorial/create-your-first-app/">Create Expo App</a> command). <a href="https://openweathermap.org/">OpenWeather API</a> is used as a backend service
+Weather Buddy is a feature-rich weather forecast mobile application created using React Native and developed using the <a href="https://docs.expo.dev/tutorial/create-your-first-app/">Create Expo App</a> command for ease of development. The application utilizes the power of the <a href="https://openweathermap.org/">OpenWeather API</a> as its backend service.
 </p>
 
 
@@ -46,34 +49,34 @@ Weather Buddy is a weather forecast mobile application built with React Native (
 
 ### Splash Screen
 <div align="center">
-  <img src="./screenshots/splash-screen.jpg" alt="splash-screen" style="display: inline-block; width: 100px;">
+  <img src="./screenshots/splash-screen.jpg" alt="splash-screen" style="display: inline-block; width: 300px;">
 </div>
 
 ### Current Weather Screen
 <div align="center">
-  <img src="./screenshots/clear-weather.jpg" alt="clear-weather" style="display: inline-block; width: 100px;">
-  <img src="./screenshots/cloudy-weather.jpg" alt="cloudy-weather" style="display: inline-block; width: 100px;">
-  <img src="./screenshots/cloudy-rainy-weather.jpg" alt="cloudy-rainy-weather" style="display: inline-block; width: 100px;">
-  <img src="./screenshots/rainy-weather.jpg" alt="rainy-weather" style="display: inline-block; width: 100px;">
-  <img src="./screenshots/thunderstorm.jpg" alt="thunderstorm" style="display: inline-block; width: 100px;">
-  <img src="./screenshots/snow.jpg" alt="snow" style="display: inline-block; width: 100px;">
-  <img src="./screenshots/haze.jpg" alt="haze" style="display: inline-block; width: 100px;">
-  <img src="./screenshots/mist.jpg" alt="mist" style="display: inline-block; width: 100px;">
+  <img src="./screenshots/clear-weather.jpg" alt="clear-weather" style="display: inline-block; width: 300px;">
+  <img src="./screenshots/cloudy-weather.jpg" alt="cloudy-weather" style="display: inline-block; width: 300px;">
+  <img src="./screenshots/cloudy-rainy-weather.jpg" alt="cloudy-rainy-weather" style="display: inline-block; width: 300px;">
+  <img src="./screenshots/rainy-weather.jpg" alt="rainy-weather" style="display: inline-block; width: 300px;">
+  <img src="./screenshots/thunderstorm.jpg" alt="thunderstorm" style="display: inline-block; width: 300px;">
+  <img src="./screenshots/snow.jpg" alt="snow" style="display: inline-block; width: 300px;">
+  <img src="./screenshots/haze.jpg" alt="haze" style="display: inline-block; width: 300px;">
+  <img src="./screenshots/mist.jpg" alt="mist" style="display: inline-block; width: 300px;">
 </div>
 
 ### Upcoming Weather Screen
 <div align="center">
-  <img src="./screenshots/upcoming-weather.jpg" alt="upcoming-weather" style="display: inline-block; width: 100px;">
+  <img src="./screenshots/upcoming-weather.jpg" alt="upcoming-weather" style="display: inline-block; width: 300px;">
 </div>
 
 ### Location Info Screen
 <div align="center">
-  <img src="./screenshots/city-info-screen.jpg" alt="city-info-screen" style="display: inline-block; width: 100px;">
+  <img src="./screenshots/city-info-screen.jpg" alt="city-info-screen" style="display: inline-block; width: 300px;">
 </div>
 
 ### Error Screen
 <div align="center">
-  <img src="./screenshots/error-screen.jpg" alt="error-screen" style="display: inline-block; width: 100px;">
+  <img src="./screenshots/error-screen.jpg" alt="error-screen" style="display: inline-block; width: 300px;">
 </div>
 
 
@@ -109,3 +112,7 @@ npm start
 <p align="justify">
 Install <a href="https://expo.dev/client">Expo Go</a> application, and scan the generated QR code.
 </p>
+
+
+# Contributors
+
