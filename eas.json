@@ -1,0 +1,24 @@
+{
+  "cli": {
+    "version": ">= 5.2.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "env": {
+        "WEATHER_FORECAST_API_KEY": "6fd42a54d6b324645a5c00f34c9f9980"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
