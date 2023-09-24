@@ -104,7 +104,7 @@ OPEN_WEATHER_API_KEY="YOUR_API_KEY"
 
 ## Execution
 <p align="justify">
-Run command bellow to start the application.
+Run command below to start the application.
 </p>
 
 ```bash
